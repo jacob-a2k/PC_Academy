@@ -18,6 +18,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,4 +26,20 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 9.6rem;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 5.2rem;
+  font-weight: 500;
+  padding: 3.2rem 0;
 }

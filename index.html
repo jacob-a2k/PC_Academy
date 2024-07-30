@@ -12,13 +12,16 @@
 
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="main-page">
     <div class="header-container">
       <div class="header-company-name">
-        <a href="">
+        <a href="#main-page">
           <span class="company-span-upper">Akademia</span>
           <span class="company-span-lower">Matematyki</span>
         </a>
@@ -26,7 +29,10 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li>
-            <a class="header-nav-link" href="#">Kim jestem</a>
+            <a class="header-nav-link" href="#about">Kim jestem</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#">Co oferuję</a>
           </li>
           <li>
             <a class="header-nav-link" href="#">Opinie</a>
@@ -47,7 +53,7 @@
 
   <main>
     <section class="section-hero">
-      <div class="hero-container">
+      <div class="hero-container container">
         <div class="hero-left-box">
           <h1 class="left-box-heading">Popraw swój wynik o</br> <span>35 pkt %</span> w miesiąc</h1>
           <p class="left-box-description">Kurs z matematyki - poziom podstawowy</p>
@@ -70,7 +76,68 @@
       </div>
     </section>
 
-    <section></section>
+    <section class="section-about" id="about">
+      <div class="container">
+        <h2 class="section-heading">Kim jestem ?</h2>
+        <div class="section-wrapper">
+          <div class="about-grid">
+            <div class="grid-left-box">
+              <img src="img/author/author-face.jpg" alt="">
+            </div>
+            <div class="flex-right-box">
+              <h3 class="about-title">mgr Piotr Ciupak & Korepetytor</h3>
+              <div class="about-information">
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Wykształcenie:</span>
+                  <span>absolwent Szkoły Głównej Handlowej w Warszawie</span>
+                </div>
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Doświadczenie:</span>
+                  <span>ponad</span>
+                  <span class="experience-years">15lat</span>
+                  <span>pracy z uczniami</span>
+                </div>
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Korepetytor:</span>
+                  <span>zajęcia prowadzę w spokojnej, bezstresowej atmosferze</span>
+                </div>
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Twórca:</span>
+                  <span>blisko</span>
+                  <span><a class="experience-years" href="https://www.youtube.com/@AkademiaMatematykiPC"
+                      target="_blank">8000</a></span>
+                  <span>lekcji video</span>
+                </div>
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Moje cechy:</span>
+                  <span>Skuteczny, Zrozumiały, Dokładny, Pozytywny, Zaradny!</span>
+                </div>
+                <div class="about-info">
+                  <ion-icon class="about-icon" name="chevron-forward-outline"></ion-icon>
+                  <span class="about-data-category">Autor:</span>
+                  <span><a class="experience-years" href="https://panel.akademia-matematyki.edu.pl/zamowienie/"
+                      target="_blank">Akademia Matematyki</a></span>
+                  <span>kompleksowe przygotowanie do matury</span>
+                </div>
+              </div>
+              <p class="about-description">
+                Zapraszam każdego, kto potrzebuje pomocy z matematyki i ma choć odrobinę chęci do pracy.<br />
+                <q><strong>Matematyka może
+                    być ciekawa, wszystko zależy od nauczyciela</strong></q><br />
+                Przyjdź i sprawdź mnie, ocenisz czy warto.<br />
+                Posiadam liczne pozytywne referencje od swoich uczniów.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
 
 

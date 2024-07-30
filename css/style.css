@@ -14,7 +14,7 @@
 /* HEADER AND NAVIGATION*/
 
 .header {
-  width: 100vw;
+  width: 100%;
   font-size: 1.8rem;
   font-weight: 500;
   background-color: #fdf2e9;
@@ -124,13 +124,10 @@
   overflow: hidden;
   height: calc(100vh - 9.6rem);
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 
 .hero-container {
-  max-width: 150rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14.2rem;
@@ -256,6 +253,86 @@
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+
+/* ////////////////////// */
+/* SECTION ABOUT*/
+
+.section-heading {
+  text-align: center;
+  font-size: 5.2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 34fr 66fr;
+  gap: 3.2rem;
+}
+
+.grid-left-box img {
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.flex-right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.about-information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.about-info {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.about-info span a:link,
+.about-info span a:visited {
+  text-decoration: none;
+}
+
+.about-info span a:hover,
+.about-info span a:active {
+  color: #cf711f;
+  border-bottom: 2px solid #cf711f;
+}
+
+.about-icon {
+  font-size: 2.4rem;
+  color: #e67e22;
+}
+
+.about-data-category {
+  font-weight: 500;
+}
+
+.experience-years {
+  font-size: 3rem;
+  color: #e67e22;
+  font-weight: 500;
+}
+
+.about-description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  padding-left: 3.2rem;
+  /* padding: 0 50% 0 3.2rem; */
 }
 
 /* 
