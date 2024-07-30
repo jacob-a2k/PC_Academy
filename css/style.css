@@ -186,7 +186,7 @@
 }
 .banner {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 .banner .slider {
@@ -220,7 +220,7 @@
   width: 100%;
   height: 84vh;
   position: absolute;
-  bottom: -21.8rem;
+  bottom: 0;
   left: 0;
   z-index: 1;
 }
@@ -309,11 +309,11 @@
   line-height: 1.6;
   letter-spacing: 0.1rem;
   padding-left: 3.2rem;
+  /* padding: 0 50% 0 3.2rem; */
 }
 
 /* ////////////////////// */
 /* SECTION OFFER*/
-
 .section-wrapper {
   display: flex;
   align-items: center;
