@@ -1,0 +1,12 @@
+{
+  "name": "pc_academy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "sass --watch sass:css --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

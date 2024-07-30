@@ -1,0 +1,339 @@
+/* 
+////////////////////////
+- Font size system (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ */
+
+/* 
+//////////////////////
+- Spacing system (px):
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ////////////////////// */
+/* HEADER AND NAVIGATION*/
+
+.header {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    background-color: #fdf2e9;
+}
+
+.header-container {
+    height: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.header-company-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    font-size: 2.4rem;
+    position: relative;
+    a {
+        color: #e67e22;
+        text-shadow: 2px 1px 0px #555;
+    }
+}
+
+.company-span-upper {
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    animation: showFromRight 2s ease-in-out;
+}
+@keyframes showFromRight {
+    0% {
+        transform: translateX(-10rem);
+        color: #333;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.company-span-lower {
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    animation: showFromLeft 2s ease-in-out;
+}
+@keyframes showFromLeft {
+    0% {
+        transform: translateX(10rem);
+        color: #333;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 4.6rem;
+    list-style-type: none;
+    align-items: center;
+    padding: 0.4rem;
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3;
+    }
+    &:hover,
+    &:active {
+        color: #cf711f;
+        border-bottom: 2px solid #cf711f;
+    }
+    &.nav-cta-btn {
+        &:link,
+        &:visited {
+            padding: 1.2rem 2.4rem;
+            background-color: #e67e22;
+            color: #fff;
+            border-radius: 12px;
+        }
+        &:hover,
+        &:active {
+            background-color: #cf711f;
+            border-bottom: none;
+        }
+    }
+}
+
+/* ////////////////////// */
+/* SECTION HERO*/
+
+.section-hero {
+    background-color: #fdf2e9;
+    padding: 4.8rem 0 9.6rem;
+    overflow: hidden;
+    height: calc(100vh - 9.6rem);
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14.2rem;
+    padding: 0 3.2rem;
+    position: relative;
+}
+
+.hero-left-box {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-box-heading {
+    font-size: 5.2rem;
+    margin-bottom: 3.2rem;
+    line-height: 1.2;
+    span {
+        font-size: 6.2rem;
+        color: #e67e22;
+    }
+}
+
+.left-box-description {
+    margin-bottom: 4.8rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-buy-course:link,
+.btn-buy-course:visited {
+    color: #fff;
+}
+
+.btn-buy-course:link,
+.btn-buy-course:visited,
+.btn-buy-course:hover,
+.btn-buy-course:active {
+    background-color: #cf711f;
+}
+
+/* ////////////////////// */
+/* SECTION HERO - right SLIDER*/
+
+.hero-right-box {
+    top: 0;
+    right: 20%;
+    animation: sattleDown 4s ease;
+}
+
+@keyframes sattleDown {
+    0% {
+        transform: translateY(-50rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .slider {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        top: 10%;
+        left: calc(50% - 100px);
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        animation: autoRun 35s linear infinite;
+        z-index: 2;
+        .item {
+            position: absolute;
+            inset: 0 0 0 0;
+            transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0 0 2px #555;
+            }
+        }
+    }
+    .model {
+        background-image: url(../img/etykiet_popr.png);
+        background-repeat: no-repeat;
+        background-size: auto 130%;
+        background-position: top center;
+        width: 100%;
+        height: 84vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1000px) rotateX(-15deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1000px) rotateX(-15deg) rotateY(360deg);
+    }
+}
+
+/* ////////////////////// */
+/* SECTION ABOUT*/
+
+.section-heading {
+    text-align: center;
+    font-size: 5.2rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 34fr 66fr;
+    gap: 3.2rem;
+}
+
+.grid-left-box img {
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.flex-right-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #888;
+}
+
+.about-information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.about-info {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.about-info span a:link,
+.about-info span a:visited {
+    text-decoration: none;
+}
+
+.about-info span a:hover,
+.about-info span a:active {
+    color: #cf711f;
+    border-bottom: 2px solid #cf711f;
+}
+
+.about-icon {
+    font-size: 2.4rem;
+    color: #e67e22;
+}
+
+.about-data-category {
+    font-weight: 500;
+}
+
+.experience-years {
+    font-size: 3rem;
+    color: #e67e22;
+    font-weight: 500;
+}
+
+.about-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    padding-left: 3.2rem;
+    /* padding: 0 50% 0 3.2rem; */
+}
+
+/* 
+////////////////////////
+- Font size system (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ */
+
+/* 
+//////////////////////
+- Spacing system (px):
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
