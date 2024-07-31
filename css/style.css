@@ -168,6 +168,10 @@
   transition: all 0.3s;
 }
 
+.btn-buy-course {
+  animation: pulse 3s ease-out infinite;
+}
+
 .btn-buy-course:link,
 .btn-buy-course:visited {
   background-color: #e67e22;
@@ -321,7 +325,7 @@
   font-weight: 500;
 }
 
-.experience-years {
+.big-orange-font {
   font-size: 3rem;
   color: #e67e22;
   font-weight: 500;
@@ -388,8 +392,8 @@
   background-color: #fff;
 }
 
-.feature-1:hover .experience-years,
-.feature-3:hover .experience-years {
+.feature-1:hover .big-orange-font,
+.feature-3:hover .big-orange-font {
   color: #fff;
 }
 
@@ -398,8 +402,8 @@
   background-color: #fff;
 }
 
-.feature-2:hover .experience-years,
-.feature-4:hover .experience-years {
+.feature-2:hover .big-orange-font,
+.feature-4:hover .big-orange-font {
   color: #fff;
 }
 
@@ -581,7 +585,7 @@
   padding: 50px 60px;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.299);
   z-index: 102;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .btn-close-modal {
@@ -597,6 +601,111 @@
 .btn-close-modal:hover {
   cursor: pointer;
   color: #000;
+}
+
+/* ////////////////////// */
+/* SECTION OPINION*/
+
+.course-grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.4rem;
+  font-size: 1.8rem;
+}
+
+.lesson-box {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+}
+
+.course-box {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-box::before {
+  content: "🥇";
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0%;
+  right: -0.6%;
+}
+
+.course-box::after {
+  font-size: 1.4rem;
+  color: #222;
+  position: absolute;
+  top: 5.5%;
+  right: -10%;
+
+  content: "best price";
+  text-transform: uppercase;
+  rotate: 45deg;
+  background-color: #ffd43b;
+  padding: 0.8rem 4.8rem;
+  font-weight: 600;
+}
+
+.prize-box {
+  width: 60%;
+  border-radius: 10px;
+  padding: 4.6rem;
+}
+
+.box-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.prize-box-header {
+  font-size: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.2rem;
+  color: #e67e22;
+  text-shadow: 2px 1px 0px #555;
+}
+
+.prize-box-prize {
+  font-size: 6.4rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #333;
+  line-height: 1;
+}
+
+.prize-box-prize span {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.prize-box-description {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.prize-box-description strong {
+  color: #555;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.prize-box-sign-up {
+  margin-top: 4.8rem;
+  text-align: center;
 }
 
 /* 
