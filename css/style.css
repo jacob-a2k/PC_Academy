@@ -372,6 +372,7 @@
   padding: 4.8rem 3.2rem;
   border: 2px solid #f8d8bd;
   border-radius: 1rem;
+  /* animation: pulse 2s infinite; */
 }
 
 .feature-1:hover,
@@ -425,6 +426,29 @@
   background-color: #f8d8bd;
   color: #e67e22;
   border-radius: 50%;
+  animation: pulse 3s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(248, 216, 189, 0.857);
+  }
+  30% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(248, 216, 189, 0.711);
+  }
+  60% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(248, 216, 189, 0.353);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.feature-box:hover .feature-box-icon {
+  animation-play-state: paused;
 }
 
 .feature-box-text {
@@ -474,6 +498,105 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+/* ////////////////////// */
+/* SECTION OPINION*/
+
+.opinion-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
+.opinion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion-box {
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background-color: #ccc;
+  position: relative;
+}
+
+.last-opinion-box {
+  border-radius: 50%;
+  background-color: #ccc;
+  height: 100%;
+  width: 70%;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background-color: #ccc;
+  position: relative;
+}
+
+.last-opinion-box span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.8rem;
+}
+
+.last-opinion-box:hover {
+  border: 3px solid #cf711f;
+}
+
+.last-opinion-box:hover .opinion-name {
+  display: block;
+}
+
+.opinion-box:hover {
+  border: 3px solid #cf711f;
+  cursor: pointer;
+}
+
+.opinion-box:hover .opinion-name {
+  display: block;
+}
+
+.opinion-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-shadow: 1px 1px 1px #444;
+  text-transform: uppercase;
+  display: none;
+}
+
+.modal-opinion-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f3f3f3;
+  padding: 50px 60px;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.299);
+  z-index: 102;
+  transition: all 0.4s;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 4.8rem;
+  border: none;
+  background: none;
+  color: #888;
+}
+
+.btn-close-modal:hover {
+  cursor: pointer;
+  color: #000;
 }
 
 /* 
