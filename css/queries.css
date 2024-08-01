@@ -1,0 +1,155 @@
+/* rem and em do not depend on html font-size in media queries! Instead, 1rem = 1em = 16px*/
+
+/* ********************** */
+/* BELOW 1632px (Medium desktops) */
+/* ********************** */
+@media (max-width: 102em) {
+  .page-footer {
+    padding: 0 9.6rem;
+  }
+}
+
+/* ********************** */
+/* BELOW 1376px (Smaller desktops) */
+/* ********************** */
+
+@media (max-width: 86em) {
+  .header-container {
+    padding: 0;
+  }
+  .hero-container {
+    max-width: 120rem;
+  }
+
+  .banner {
+    width: 64%;
+  }
+
+  .banner .model {
+    background-size: auro 118%;
+    width: 126%;
+  }
+
+  .left-box-heading {
+    font-size: 4rem;
+  }
+  .feature-box-hidden {
+    width: 30rem;
+  }
+  .feature-box {
+    width: 15;
+  }
+  .hidden-list {
+    font-size: 1.4rem;
+    letter-spacing: 0.9;
+  }
+  .hidden-list-flex span .big-orange-font {
+    font-size: 2rem;
+  }
+
+  .prize-box {
+    width: 72%;
+  }
+
+  .footer-box-input {
+    font-size: 1.4rem;
+  }
+
+  .footer-upper-container {
+    padding-right: 2.4rem;
+  }
+
+  .about-icon {
+    font-size: 2.4rem;
+  }
+  .footer-upper-span {
+    font-size: 1.4rem;
+  }
+}
+
+/* ********************** */
+/* BELOW 1136x (Smaller desktops) */
+/* ********************** */
+
+@media (max-width: 71em) {
+  html {
+    /*  9px/16px = 0.5625  */
+    font-size: 56.25%;
+  }
+  .hero-container {
+    gap: 0;
+  }
+
+  .hero-left-box {
+    justify-content: start;
+  }
+
+  .banner {
+    width: 50%;
+  }
+
+  .banner .slider {
+    top: 42%;
+  }
+
+  .banner .model {
+    height: 59vh;
+    left: -19px;
+  }
+
+  .big-orange-font {
+    font-size: 2rem;
+  }
+
+  .feature-box-hidden {
+    width: 25rem;
+  }
+
+  /* .feature-box {
+    width: 10;
+  } */
+
+  .opinion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 6.4rem;
+    /* overflow: hidden; */
+  }
+
+  .opinion-grid > .opinion-container:nth-child(n + 13) {
+    display: none;
+  }
+
+  .prize-box {
+    width: 80%;
+  }
+
+  .footer-upper-container {
+    padding: 4.8rem 2.4rem 0;
+  }
+
+  .footer-upper-content {
+    gap: 1.8rem;
+  }
+
+  .footer-upper-list {
+    gap: 1rem;
+  }
+
+  .footer-upper-item {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .footer-upper-span {
+    font-size: 1.2rem;
+  }
+}
+
+/* ********************** */
+/* BELOW 928px (Smaller desktops) */
+/* ********************** */
+
+@media (max-width: 58em) {
+}

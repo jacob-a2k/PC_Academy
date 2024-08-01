@@ -19,6 +19,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,10 +28,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 section {
-  width: 100%;
+  max-width: 100%;
   padding-top: 8rem;
   padding-bottom: 3.2rem;
 }
