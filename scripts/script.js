@@ -1,5 +1,8 @@
 "use strict";
 
+/////////////////////
+/* OPEN MODAL WINDOW AND OVERLAY */
+
 const btnShowModal = document.querySelectorAll(".opinion-box");
 const btnCloseModal = document.querySelector(".btn-close-modal");
 const modalImg = document.querySelector(".img-testimonial");
@@ -32,23 +35,47 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// const opinion_0 = document.querySelector("#opinion-0");
-// opinion_0.addEventListener("click", function () {
-//   const tmpIdNum = opinion_0.id[opinion_0.id.length - 1];
-//   console.log(tmpIdNum);
-// });
-// const opinion_1 = document.querySelector("#opinion-1");
-// opinion_1.addEventListener("click", function () {
-//   const tmpIdNum = opinion_1.id[opinion_1.id.length - 1];
-//   console.log(tmpIdNum);
-// });
-// const opinion_2 = document.querySelector("#opinion-2");
-// opinion_2.addEventListener("click", function () {
-//   const tmpIdNum = opinion_2.id[opinion_2.id.length - 1];
-//   console.log(tmpIdNum);
-// });
-// const opinion_3 = document.querySelector("#opinion-3");
-// opinion_3.addEventListener("click", function () {
-//   const tmpIdNum = opinion_3.id[opinion_3.id.length - 1];
-//   console.log(tmpIdNum);
-// });
+/////////////////////
+/* EMPHASIZE PHONE NUMBER */
+
+const phoneBtn = document.querySelectorAll(".btn-phone");
+const phoneBox = document.querySelector("#phone-box");
+
+const addClass = function () {
+  phoneBox.classList.add("phone-emphasize");
+};
+
+const emphasizePhoneNumber = function () {
+  setTimeout(addClass, 1000);
+};
+
+phoneBtn.forEach((btn) => btn.addEventListener("click", emphasizePhoneNumber));
+
+window.addEventListener("scroll", function () {
+  if (phoneBox.classList.contains("phone-emphasize")) {
+    phoneBox.classList.remove("phone-emphasize");
+  }
+});
+
+/////////////////////
+/* STICKY NAVIGATION*/
+
+const header = document.querySelector(".section-header");
+const navBox = document.querySelector(".header");
+
+const navHeight = navBox.getBoundingClientRect().height;
+// console.log(navHeight);
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (!entry.isIntersecting) navBox.classList.add("sticky");
+  else navBox.classList.remove("sticky");
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+headerObserver.observe(header);

@@ -18,46 +18,47 @@
 </head>
 
 <body>
-  <header class="header" id="main-page">
-    <div class="header-container">
-      <div class="header-company-name company-name">
-        <a href="#main-page">
-          <span class="company-span-upper">Akademia</span>
-          <span class="company-span-lower">Matematyki</span>
-        </a>
+  <div class="section-header" id="main-page">
+    <header class="header">
+      <div class="header-container">
+        <div class="header-company-name company-name">
+          <a href="#main-page">
+            <span class="company-span-upper">Akademia</span>
+            <span class="company-span-lower">Matematyki</span>
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li>
+              <a class="header-nav-link" href="#about">Kim jestem</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#offer">Co oferuję</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#opinion">Opinie</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="#course">Kursy</a>
+            </li>
+            <li>
+              <a class="header-nav-link btn-phone" href="#footer">Kontakt</a>
+            </li>
+            <li>
+              <a class="header-nav-link nav-cta-btn" href="#footer">Darmowa Lekcja</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li>
-            <a class="header-nav-link" href="#about">Kim jestem</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#offer">Co oferuję</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#opinion">Opinie</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#course">Kursy</a>
-          </li>
-          <li>
-            <a class="header-nav-link" href="#footer">Kontakt</a>
-          </li>
-          <li>
-            <a class="header-nav-link nav-cta-btn" href="#footer">Darmowa Lekcja</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
     <section class="section-hero">
       <div class="hero-container container">
         <div class="hero-left-box">
           <h1 class="left-box-heading">Popraw swój wynik o</br> <span>35 pkt %</span> w miesiąc</h1>
           <p class="left-box-description">Kurs z matematyki - poziom podstawowy</p>
-          <a href="#" class="btn btn-buy-course">Chcę dołączyć!</a>
+          <a href="#course" class="btn btn-buy-course">Chcę dołączyć!
+            <!-- <span class="snippet">Przekierowywuję</span> --></a>
         </div>
         <div class="hero-right-box">
           <div class="banner">
@@ -75,6 +76,9 @@
         </div>
       </div>
     </section>
+  </div>
+
+  <main>
 
     <section class="section-about" id="about">
       <div class="container">
@@ -209,7 +213,7 @@
                   <li>
                     <div class="hidden-list-flex">
                       <ion-icon class="about-icon" name="hand-right-outline"></ion-icon>
-                      <span>nielimitowant czas dostępu</span>
+                      <span>nielimitowany czas dostępu</span>
                     </div>
                   </li>
                   <li>
@@ -504,7 +508,7 @@
               </li>
             </ul>
             <div class="prize-box-sign-up">
-              <a class="btn btn-buy-course" href="#">Wybieram lekcje!</a>
+              <a class="btn btn-buy-course btn-phone" href="#footer">Wybieram lekcje!</a>
             </div>
           </div>
 
@@ -539,7 +543,9 @@
               </li>
             </ul>
             <div class="prize-box-sign-up">
-              <a class="btn btn-buy-course" href="#">Wybieram kurs!</a>
+              <a class="btn btn-buy-course"
+                href="https://panel.akademia-matematyki.edu.pl/product/kurs-maturalny-z-matematyki-poziom-podstawowy/"
+                target="_blank">Wybieram kurs!<span class="snippet">Przekierowywuję</span></a>
             </div>
 
           </div>
@@ -553,8 +559,8 @@
       <div class="footer-info">
         <div class="footer-info-box">
           <div class="footer-box-data">
-            <input class="footer-box-input" type="email" placeholder="Twój email">
-            <button class="footer-box-button " type="submit">Wyślij</button>
+            <input class="footer-box-input" type="email" placeholder="Podaj maila na którego wyślę darmową lekcję">
+            <button class="footer-box-button " type="submit">Zatwierdź</button>
             <div class="footer-absolute-circle"></div>
           </div>
           <div class="grid-3-cols">
@@ -626,9 +632,9 @@
               <ion-icon class="about-icon" name="mail-open-outline"></ion-icon>
               <span class="footer-upper-span">piotrek.ciupak@gmail.com</span>
             </li>
-            <li class="footer-upper-item">
+            <li class="footer-upper-item" id="phone-box">
               <ion-icon class="about-icon" name="call-outline"></ion-icon>
-              <span class="footer-upper-span">572 092 279</span>
+              <span id="phone-number" class="footer-upper-span">572 092 279</span>
             </li>
             <li class="footer-upper-item">
               <ion-icon class="about-icon" name="logo-skype"></ion-icon>
