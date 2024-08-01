@@ -817,6 +817,11 @@
   position: relative;
 }
 
+.input-emphasize {
+  border-radius: 80px;
+  animation: pulse 3s ease-out infinite;
+}
+
 .footer-box-input {
   width: 60%;
   height: 100%;

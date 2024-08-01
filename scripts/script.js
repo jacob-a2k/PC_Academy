@@ -35,7 +35,28 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-/////////////////////
+////////////////////////////
+/* EMPHASIZE FREE LESSON */
+const freeLessonBtn = document.querySelector(".nav-cta-btn");
+const inputBox = document.querySelector(".footer-box-data");
+
+const inputAddClass = function () {
+  inputBox.classList.add("input-emphasize");
+};
+
+const emphasizeInputBox = function () {
+  setTimeout(inputAddClass, 1000);
+};
+
+freeLessonBtn.addEventListener("click", emphasizeInputBox);
+
+window.addEventListener("scroll", function () {
+  if (inputBox.classList.contains("input-emphasize")) {
+    inputBox.classList.remove("input-emphasize");
+  }
+});
+
+////////////////////////////
 /* EMPHASIZE PHONE NUMBER */
 
 const phoneBtn = document.querySelectorAll(".btn-phone");
