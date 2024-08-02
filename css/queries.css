@@ -22,12 +22,14 @@
   }
 
   .banner {
-    width: 64%;
+    width: 71%;
   }
 
   .banner .model {
     background-size: auro 118%;
-    width: 126%;
+    width: 167%;
+    height: 92vh;
+    left: -84px;
   }
 
   .left-box-heading {
@@ -94,7 +96,7 @@
 
   .banner .model {
     height: 59vh;
-    left: -19px;
+    left: -57px;
   }
 
   .big-orange-font {
@@ -144,6 +146,14 @@
 
   .footer-upper-span {
     font-size: 1.2rem;
+  }
+
+  .modal-opinion-window {
+    width: 90%;
+    padding: 4.8rem;
+  }
+  .img-testimonial {
+    width: 100%;
   }
 }
 
