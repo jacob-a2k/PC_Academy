@@ -153,8 +153,8 @@
   display: none;
 
   position: fixed;
-  top: 1rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
 }
 
 .hamburger-icon {
@@ -918,7 +918,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 4.8rem;
-  border-bottom: 1px solid #fff;
 }
 
 .footer-grid-box {
@@ -945,6 +944,7 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  border-top: 1px solid #fff;
 }
 
 .rights-box {

@@ -41,6 +41,7 @@ const freeLessonBtn = document.querySelector(".nav-cta-btn");
 const inputBox = document.querySelector(".footer-box-data");
 
 const inputAddClass = function () {
+  console.log("kliknięto mnie");
   inputBox.classList.add("input-emphasize");
 };
 

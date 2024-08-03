@@ -38,9 +38,6 @@
   .feature-box-hidden {
     width: 30rem;
   }
-  .feature-box {
-    width: 15;
-  }
   .hidden-list {
     font-size: 1.4rem;
     letter-spacing: 0.9;
@@ -91,11 +88,11 @@
   }
 
   .banner .slider {
-    top: 42%;
+    top: 49%;
   }
 
   .banner .model {
-    height: 59vh;
+    height: 51vh;
     left: -57px;
   }
 
@@ -106,10 +103,6 @@
   .feature-box-hidden {
     width: 25rem;
   }
-
-  /* .feature-box {
-    width: 10;
-  } */
 
   .opinion-grid {
     display: grid;
@@ -146,6 +139,11 @@
 
   .footer-upper-span {
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .footer-grid-3-cols-list {
+    font-size: 1.3rem;
   }
 
   .modal-opinion-window {
@@ -172,6 +170,8 @@
 
   .sticky {
     width: 0;
+    background-color: inherit;
+    box-shadow: none;
     /* display: none; */
   }
 
@@ -196,6 +196,121 @@
   .header-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.8rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left-box {
+    margin-top: 3.2rem;
+  }
+
+  .left-box-heading {
+    font-size: 5.2rem;
+  }
+
+  .banner {
+    width: 110%;
+  }
+
+  .banner .slider {
+    top: -59%;
+    width: 160px;
+    height: 200px;
+  }
+
+  .banner .model {
+    left: -194px;
+    display: none;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(1000px) rotateX(-8deg) rotateY(0deg);
+    }
+    to {
+      transform: perspective(1000px) rotateX(-8deg) rotateY(360deg);
+    }
+  }
+
+  .about-grid {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .grid-left-box {
+    width: 50%;
+  }
+  .about-title {
+    position: absolute;
+    top: 25%;
+    left: 51%;
+    font-size: 2.4rem;
+  }
+  .about-information {
+    gap: 0.4rem;
+  }
+  .about-description {
+    position: absolute;
+    top: 33%;
+    left: 51%;
+    font-size: 1.4rem;
+  }
+
+  .offer-grid {
+    gap: 2.4rem;
+  }
+
+  .feture-box-wide {
+    height: 200px;
+  }
+  .feature-box {
+    width: 15rem;
+    height: 290px;
+  }
+
+  .feature-box-hidden {
+    width: 20rem;
+    height: 100%;
+  }
+
+  .hidden-list-flex {
+    align-items: start;
+  }
+
+  .box-header {
+    margin-bottom: 2.4rem;
+  }
+  .box-list {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+  .about-icon {
+    font-size: 2.4rem;
+  }
+
+  .footer-company-name a {
+    font-size: 2.4rem;
+  }
+  .footer-info-box {
+    padding-left: 0;
+  }
+  .grid-3-cols {
+    gap: 2rem;
+  }
+  .footer-grid-3-cols-title {
+    font-size: 2rem;
+  }
+  .footer-grid-3-cols-list {
+    font-size: 1rem;
+  }
+  .footer-box-input::placeholder {
+    font-size: 0.8rem;
   }
 }
+
+/* ********************** */
+/* BELOW 704px (Smaller Tablets) */
+/* ********************** */
