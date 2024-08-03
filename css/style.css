@@ -138,12 +138,58 @@
 /* ////////////////////// */
 /* Mobile Navigation*/
 
+.header-mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hamburger-menu-btn {
+  border: none;
+  font-size: 5rem;
+  background: none;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
   display: none;
 }
 
+@keyframes slideInOpacityUp {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .hamburger-menu-container {
+  position: fixed;
+  right: 0;
+  max-width: 300px;
+  height: 45vh;
+  padding: 96px 15px 0 15px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -1px 1px 6px hsla(0, 0%, 0%, 0.21);
+
+  background-color: #fefefe;
   display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 98;
 }
 
 /* ////////////////////// */

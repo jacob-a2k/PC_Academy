@@ -100,3 +100,27 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 headerObserver.observe(header);
+
+/////////////////////
+/* MOBILE NAVIGATION*/
+
+const hamburgerOpenBtn = document.querySelector(".hamburger-open");
+const hamburgerCloseBtn = document.querySelector(".hamburger-close");
+const mobileNavContainer = document.querySelector(".hamburger-menu-container");
+const mobileNavOpenBtn = document.querySelector(".hamburger-open");
+const mobileNavCloseBtn = document.querySelector(".hamburger-close");
+
+const openMobileNav = function () {
+  mobileNavContainer.style.display = "flex";
+  hamburgerOpenBtn.style.display = "none";
+  hamburgerCloseBtn.style.display = "flex";
+};
+
+const closeMobileNav = function () {
+  mobileNavContainer.style.display = "none";
+  hamburgerOpenBtn.style.display = "flex";
+  hamburgerCloseBtn.style.display = "none";
+};
+
+mobileNavOpenBtn.addEventListener("click", openMobileNav);
+mobileNavCloseBtn.addEventListener("click", closeMobileNav);

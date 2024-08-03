@@ -162,4 +162,40 @@
 /* ********************** */
 
 @media (max-width: 58em) {
+  .header-container {
+    display: none;
+  }
+
+  .section-hero {
+    height: 100vh;
+  }
+
+  .sticky {
+    width: 0;
+    /* display: none; */
+  }
+
+  .hamburger-menu-btn {
+    display: block;
+  }
+
+  .hamburger-open {
+    display: flex;
+  }
+
+  .company-span-upper {
+    top: -49px;
+    left: -50px;
+  }
+
+  .company-span-lower {
+    top: -22px;
+    left: -62px;
+  }
+
+  .header-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
