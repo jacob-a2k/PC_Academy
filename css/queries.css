@@ -597,13 +597,20 @@
   .left-box-description {
     text-align: center;
   }
+
+  .hero-rigth-box {
+    display: flex;
+    justify-content: center;
+  }
   .banner {
-    width: 130%;
+    width: 100%;
+    display: flex;
   }
 
   .banner .slider {
     height: 150px;
     width: 120px;
+    left: calc(50% - 60px);
   }
   .banner .slider .item {
     transform: rotateY(
