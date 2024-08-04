@@ -26,7 +26,7 @@
   }
 
   .banner .model {
-    background-size: auro 118%;
+    background-size: auto 118%;
     width: 167%;
     height: 92vh;
     left: -84px;
@@ -294,6 +294,12 @@
     font-size: 2.4rem;
   }
 
+  .course-box::after {
+    top: 7%;
+    right: -17%;
+    padding: 0.8rem 6.4rem;
+  }
+
   .footer-company-name a {
     font-size: 2.4rem;
   }
@@ -474,6 +480,38 @@
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border-top: none;
+  }
+
+  .opinion-grid {
+    width: 100%;
+  }
+  .opinion-container {
+    width: 100%;
+    height: 100%;
+  }
+  .opinion-box {
+    width: 100%;
+    height: 100%;
+  }
+  .opinion-box img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .course-grid-2-cols {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .prize-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-box::after {
+    top: 8%;
+    right: -10%;
   }
 }
 
