@@ -619,6 +619,9 @@
       translateZ(-140px);
   }
 
+  .section-about .container .section-wrapper {
+    padding-right: 1.2rem;
+  }
   .about-title {
     font-size: 1.8rem;
   }
