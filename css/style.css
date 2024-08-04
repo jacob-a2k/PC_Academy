@@ -891,6 +891,7 @@
   letter-spacing: 0.1rem;
   font-size: 1.8rem;
   font-weight: 600;
+  z-index: 1;
 }
 
 .footer-box-button:hover {

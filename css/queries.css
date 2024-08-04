@@ -589,4 +589,85 @@
 /* ********************** */
 
 @media (max-width: 30em) {
+  html {
+    /*  8px/16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .left-box-description {
+    text-align: center;
+  }
+  .banner {
+    width: 130%;
+  }
+
+  .banner .slider {
+    height: 150px;
+    width: 120px;
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(-140px);
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+  .about-description {
+    font-size: 1rem;
+  }
+  .about-data-category {
+    font-size: 1.2rem;
+  }
+  .about-info {
+    font-size: 0.9rem;
+  }
+  .about-info .big-orange-font {
+    font-size: 1.4rem;
+  }
+
+  .feature-box {
+    padding: 2rem;
+  }
+  .feature-box-text {
+    font-size: 0.9rem;
+  }
+  .feature-box-text .big-orange-font {
+    font-size: 1.4rem;
+  }
+
+  .course-box::after {
+    top: 8%;
+    right: -14%;
+  }
+
+  .footer-upper-container {
+    padding: 4.8rem 1.2rem;
+  }
+  .footer-upper-item {
+    flex-direction: column;
+  }
+  .about-icon {
+    font-size: 1.6rem;
+  }
+  .footer-upper-span {
+    font-size: 0.9rem;
+  }
+  .footer-box-button {
+    font-size: 1.4rem;
+    padding-left: 0;
+  }
+  .rights-box {
+    font-size: 0.8rem;
+  }
+  .modal-opinion-window {
+    padding: 1.2rem;
+  }
+  .btn-close-modal {
+    top: -2px;
+    right: 2px;
+    font-size: 1.8rem;
+  }
 }
