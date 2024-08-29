@@ -24,11 +24,21 @@
   .banner {
     width: 71%;
   }
+  .baner .slider {
+    width: 180px;
+    height: 230px;
+  }
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(267px);
+  }
 
   .banner .model {
     background-size: auto 118%;
     width: 167%;
-    height: 92vh;
+    height: 80vh;
     left: -84px;
   }
 
@@ -84,16 +94,25 @@
   }
 
   .banner {
-    width: 50%;
+    width: 121%;
   }
 
   .banner .slider {
-    top: 49%;
+    top: 53%;
+    width: 150px;
+    height: 200px;
+  }
+
+  .banner .slider .item {
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(230px);
   }
 
   .banner .model {
     height: 51vh;
-    left: -57px;
+    left: -184px;
   }
 
   .big-orange-font {
